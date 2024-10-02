@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>Params using Embedded JS</h2>
+        
+        <p>Second Version</p>
+        
+        <p id="demo"></p>
+        <script>
+            function multiply(a,b = 1)
+            { return a * b; }
+            
+            let x = 5;
+            let y = 6;
+            let z = 0; // Prefixing a value.
+            
+            z = multiply(x, y); // Z is used to return function value and displayed.
+            document.getElementById("demo").innerHTML = "The value of the function is: " + z;
+        </script>
+    </body>
+</html>

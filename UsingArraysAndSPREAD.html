@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>SPREAD using Embedded JS</h2>
+        
+        <p>USING ARRAYS AND SPREAD</p>
+        
+        <p id="demo"></p>
+        <script>
+            
+            const nums1 = [ 9, 3, 2];
+            const nums2 = [ 2, 4, 8];
+            const totalnums = [...nums1, ...nums2];
+            
+            Math.max(totalnums); // Same as calling Math.max(9, 3, 2, 9).
+            document.write(totalnums);
+        </script>
+    </body>
+</html>

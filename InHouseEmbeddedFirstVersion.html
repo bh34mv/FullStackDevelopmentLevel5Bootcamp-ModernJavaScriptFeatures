@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>Params using Embedded JS</h2>
+        
+        <p>First Version</p>
+        
+        <p id="demo"></p>
+        <script>
+            function rollDie(numSides)
+            {
+                if(numSides === undefined)
+                {
+                    numSides = 6;
+                }
+                return Math.floor(Math.random() * numSides) + 1;
+            }
+            
+            let noSide = 6;
+            let z = 0; // Prefixing a value.
+            
+            z = rollDie(noSide) // Z is used to return function value and displayed.
+            document.getElementById("demo").innerHTML = "No slide is: " z;
+        </script>
+    </body>
+</html>
